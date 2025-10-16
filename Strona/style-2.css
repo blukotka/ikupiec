@@ -1,0 +1,291 @@
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- BODY --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0f2ff, #f6fbff);
+  color: #2c3e50;
+  scroll-behavior: smooth;
+  line-height: 1.7;
+}
+
+/* --- MENU --- */
+#main-nav {
+  background-color: #ffffffee;
+  backdrop-filter: blur(6px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #66b3ff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#main-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+}
+
+#main-nav ul li a {
+  color: #005b96;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#main-nav ul li a:hover {
+  background-color: #66b3ff;
+  color: #fff;
+}
+
+/* --- HEADER --- */
+#main-header {
+  position: relative;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('mikro.jpg') center/cover no-repeat;
+  color: #ffffff;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+#main-header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 90, 180, 0.4);
+}
+
+#main-header .title {
+  font-size: 3em;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+#main-header .subtitle {
+  font-size: 1.4em;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- BUTTON --- */
+.signup-button {
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #fff;
+  background: #3498db;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.signup-button:hover {
+  background: #2176c7;
+  transform: translateY(-3px);
+}
+
+/* --- SEKCJE --- */
+.section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 50px;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.section h2 {
+  font-size: 2.3em;
+  color: #2176c7;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* --- DLACZEGO MY --- */
+.why-us-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.why-us-image img {
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid #66b3ff;
+}
+
+.features-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+}
+
+/* --- TUTORZY --- */
+#tutors {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.tutors-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.subject-card {
+  flex: 0 0 calc(50% - 15px);
+  background: #f8fbff;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: 2px solid #a3d1ff;
+  transition: all 0.3s ease;
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.subject-card h3 {
+  text-align: center;
+  color: #2176c7;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+
+/* --- CENNIK --- */
+.pricing-section h2 {
+  color: #2176c7;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-table th, .pricing-table td {
+  border: 1px solid #a3d1ff;
+  padding: 12px;
+  text-align: center;
+}
+
+.pricing-table th {
+  background: #3498db;
+  color: #fff;
+}
+
+.pricing-table tr:nth-child(even) {
+  background-color: #f2f8ff;
+}
+
+/* --- KONTAKT --- */
+.contact-section h2 {
+  color: #2176c7;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.contact-info a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-photo {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* --- FOOTER --- */
+#main-footer {
+  background: #2176c7;
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 60px;
+}
+
+#main-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#main-footer a:hover {
+  color: #cce6ff;
+}
+
+/* --- RESPONSYWNOŚĆ --- */
+@media (max-width: 1024px) {
+  .price-contact {
+    flex-direction: column;
+  }
+
+  .pricing-section, 
+  .contact-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-nav ul {
+    flex-direction: column;
+  }
+
+  .tutors-cards {
+    flex-direction: column;
+  }
+
+  .subject-card {
+    flex: 0 0 100%;
+  }
+}
