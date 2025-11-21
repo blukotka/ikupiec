@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  height: 100%;
+  background: url("niebo.jpg") no-repeat center center fixed,
+              linear-gradient(180deg, #dce9ff, #f4f7fb);
+  background-size: cover;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root{
+  --card:#ffffff;
+  --accent:#3b82f6;
+  --muted:#6b7280;
+  --shadow: 0 6px 18px rgba(15,23,42,0.15);
+  --radius:14px;
+  --glass: rgba(255,255,255,0.65);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+*{box-sizing:border-box}
+
+.container{
+  max-width: 920px;
+  margin: 40px auto;
+  padding: 28px;
+  backdrop-filter: blur(6px);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 22px;
+  background: rgba(255, 255, 255, 0.55);
+  padding: 18px 24px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 800;
+  color: #003366;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e3a8a;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.35);
+}
+
+.search{
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), var(--glass));
+  padding:16px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  margin-bottom:18px;
+}
+
+.search-row{
+  display:flex;
+  gap:10px;
+  margin-top:8px;
+}
+
+input[type="text"]{
+  flex:1;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid #e6eefc;
+  font-size:15px;
+  outline:none;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+input[type="text"]:focus{
+  border-color:var(--accent);
+  box-shadow:0 0 0 4px rgba(59,130,246,0.18);
+}
+
+button{
+  background:linear-gradient(180deg,var(--accent), #1e66d6);
+  color:white;
+  border:0;
+  padding:12px 18px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  min-width:110px;
+}
+
+button:active{transform:translateY(1px)}
+
+.card{
+  background:rgba(255,255,255,0.87);
+  border-radius:var(--radius);
+  padding:16px;
+  box-shadow:var(--shadow);
+  margin-bottom:14px;
+  backdrop-filter: blur(6px);
+}
+
+.hidden{display:none}
+
+.weather-grid{
+  display:flex;
+  gap:16px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.current-temp{
+  font-size:56px;
+  font-weight:800;
+  color:#003366;
+  text-shadow:0 2px 4px rgba(0,0,0,0.25);
+}
+
+.current-desc{
+  font-size:16px;
+  color:#1e3a8a;
+}
+
+.forecast-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap:12px;
+  margin-top:10px;
+}
+
+.forecast-card{
+  background: linear-gradient(180deg,#ffffff, #f7fbff);
+  border-radius:12px;
+  padding:12px;
+  text-align:center;
+  border:1px solid #eef6ff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.forecast-card .day {
+  font-weight:700;
+  margin-bottom:6px;
+  color:#003366;
+}
+
+.forecast-card .temp {
+  font-size:20px;
+  font-weight:700;
+  color:#1e40af;
+}
+.forecast-grid {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+
