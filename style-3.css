@@ -1,0 +1,143 @@
+/* TŁO STRONY */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #fff4e6, #ffe6cc);
+}
+
+/* MENU */
+#main-nav {
+  background-color: #ffffffaa;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(255, 165, 0, 0.2);
+}
+
+#main-nav ul li a {
+  color: #ff9800;
+}
+
+#main-nav ul li a:hover {
+  color: #ff6f00;
+  background-color: #fff3e0;
+}
+
+/* HEADER */
+#main-header {
+  background: linear-gradient(to right, #ffc28b, #ffffff);
+}
+
+#main-header .title,
+#main-header .subtitle {
+  color: #ff9800;
+}
+
+/* SEKCJE */
+.section {
+  border: 2px solid #ffb74d;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(255, 165, 0, 0.15);
+}
+
+.section-title {
+  color: #ff9800;
+}
+
+/* PRZYCISK ZAPISZ SIĘ */
+.signup-button {
+  background-color: #ff6f00;
+  color: white;
+}
+
+.signup-button:hover {
+  background-color: #ff9800;
+}
+
+/* DLACZEGO MY? */
+.feature-photo {
+  box-shadow: 0 4px 10px rgba(255, 165, 0, 0.25);
+}
+
+.features-list li::marker {
+  color: #ff6f00;
+}
+
+/* TUTORZY */
+.subject-title {
+  border: 2px solid #ff6f00;
+  color: #ff6f00;
+}
+
+.tutor {
+  background-color: #fff4e0;
+  box-shadow: 0 4px 10px rgba(255, 165, 0, 0.15);
+}
+
+.tutor:hover {
+  box-shadow: 0 4px 14px rgba(255, 165, 0, 0.25);
+}
+
+.tutor-info h4 {
+  color: #ff9800;
+}
+
+/* Q&A */
+.qa-item h3 {
+  color: #ff6f00;
+}
+
+/* CENNIK */
+.pricing-table th {
+  background-color: #ff6f00;
+}
+
+.pricing-table tr:nth-child(even) {
+  background-color: #fff3e0;
+}
+
+/* KONTAKT */
+.contact-photo {
+  box-shadow: 0 4px 10px rgba(255, 165, 0, 0.25);
+}
+
+.contact-info a {
+  color: #ff6f00;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* STOPKA */
+#main-footer {
+  background: linear-gradient(135deg, #ff9800, #e65100);
+  border-top: 3px solid #ffb74d;
+}
+
+.footer-info h3,
+.footer-social h3 {
+  color: #ffd699;
+}
+
+.footer-info a:hover,
+.footer-social a:hover {
+  color: #ffb74d;
+}
+
+/* WYBÓR STYLU */
+#style-links button {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#style-links button:hover {
+  background-color: #ff9800;
+}
