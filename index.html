@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pogodynka — LAB D</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Pogodynka</h1>
+      <p class="subtitle">Sprawdź aktualną pogodę i 5-dniową prognozę (°C)</p>
+    </header>
+
+    <section class="search">
+      <label for="city">Miejscowość</label>
+      <div class="search-row">
+        <input id="city" type="text" placeholder="np. Warszawa" />
+        <button id="btnWeather">Pogoda</button>
+      </div>
+      <p class="note">Wpisz nazwę miasta i kliknij „Pogoda”.</p>
+    </section>
+
+    <section id="current" class="card hidden">
+      <h2>Pogoda bieżąca</h2>
+      <div id="currentContent" class="weather-grid">
+      </div>
+    </section>
+
+    <section id="forecast" class="card hidden">
+      <h2>Prognoza 5 dni</h2>
+      <div id="forecastContent" class="forecast-grid">
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

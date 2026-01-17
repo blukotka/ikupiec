@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="pl.edu.zut.wi.ki55672" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Izabela 55672</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="ki55672@zut.edu.pl" href="https://cordova.apache.org">
+        Izabela Kupiec
+    </author>
+    <content src="weather.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <icon src="platforms/electron/IK.png" />
+    <preference name="ElectronSettingsFilePath" value="platforms/electron/settings.json" />
+</widget>
